@@ -16,7 +16,7 @@ const Home = () => {
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
           {/* Card for Page 1 */}
-          <Link to="/page1" className="group block">
+          <Link to="/page-one" className="group block">
             <div className="relative bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 h-full flex flex-col">
               <div className="h-48 bg-[#eefac8] flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-500">
                  <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-sm">
