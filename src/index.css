@@ -4,4 +4,24 @@
 
 * {
     outline: none;
+
+}
+
+.blackWhiteScroll {
+    scrollbar-color: black white !important;
+    scrollbar-width: thin !important;
+}
+
+/* WebKit support (Chrome, Edge, Safari) */
+.blackWhiteScroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.blackWhiteScroll::-webkit-scrollbar-track {
+    background: white;
+}
+
+.blackWhiteScroll::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 4px;
 }

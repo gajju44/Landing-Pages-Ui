@@ -68,6 +68,31 @@ const Home = () => {
             </div>
           </Link>
 
+          {/* Card for Page 3 */}
+          <Link to="/page3" className="group block">
+            <div className="relative bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 h-full flex flex-col">
+              <div className="h-48 bg-black flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-500">
+                 <div className="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20">
+                    <span className="text-2xl font-bold text-white">Page3</span>
+                 </div>
+              </div>
+              <div className="p-8 flex-1">
+                <h3 className="mt-4 text-2xl font-bold text-gray-900 group-hover:text-black transition-colors">
+                  Page3
+                </h3>
+                <p className="mt-2 text-gray-500">
+                  Premium dark aesthetic with fluid animations and scroll reveals.
+                </p>
+                <div className="mt-6 flex items-center text-black font-medium">
+                  View Page 
+                  <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </Link>
+
           {/* Coming Soon Placeholder */}
           <div className="relative bg-gray-50 rounded-3xl border-2 border-dashed border-gray-200 h-full flex flex-col items-center justify-center p-8 text-center hover:border-gray-300 transition-colors">
             <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
