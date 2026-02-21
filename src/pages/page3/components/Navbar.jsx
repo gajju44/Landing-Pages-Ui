@@ -8,7 +8,7 @@ const Navbar = ({ isDark, toggleTheme }) => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`flex items-center justify-between sticky top-0 z-50 px-16 pt-10 w-full max-w-[1400px] mx-auto bg-transparent transition-colors duration-300`}
+      className={`flex items-center justify-between sticky top-0 z-[9999999] px-16 pt-10 w-full max-w-[1400px] mx-auto bg-transparent transition-colors duration-300`}
     >
       {/* Logo */}
       <div className="flex items-center gap-2 cursor-pointer">
