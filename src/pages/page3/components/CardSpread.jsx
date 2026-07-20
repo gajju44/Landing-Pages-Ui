@@ -18,13 +18,13 @@ const CardSpread = () => {
     const sequence = async () => {
        // Phase 1: Enter as a group (clumped together)
        await controls.start({
-          y: 60, // Start lower
+          y: 0, 
           opacity: 1,
           scale: 1,
-          rotate: 0,
+          rotate: 4,
           x: 0,
           transition: { 
-            duration: 0.8, 
+            duration: 1, 
             ease: "backOut",
             delay: 0.3
           }
@@ -54,7 +54,7 @@ const CardSpread = () => {
           <motion.div
             key={card.id}
             custom={index}
-            initial={{ y: 300, opacity: 0, rotate: 0, x: 0, scale: 0.8 }}
+            initial={{ y: 300, opacity: 0, rotate: -40, x: 0, scale: 0.8 }}
             animate={controls}
             // whileHover={{ 
             //     scale: 1.05, 
@@ -78,14 +78,14 @@ const CardSpread = () => {
 
         {/* Floating Badge @coplin */}
         <motion.div
-           initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
+           initial={{ opacity: 0, scale: 0, x: -310, y: -230 }}
            animate={{ 
                opacity: 1, 
                scale: 1, 
                rotate:-4,
                x: -310, 
                y: -230,
-               transition: { delay: 1.2, type: "spring" } 
+               transition: { delay: 1.7, type: "spring" } 
            }}
            className="absolute z-20 flex flex-col items-center"
         >
@@ -97,14 +97,14 @@ const CardSpread = () => {
 
         {/* Floating Badge @andrea */}
         <motion.div
-           initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
+           initial={{ opacity: 0, scale: 0, x: 400, y: -220 }}
            animate={{ 
                opacity: 1, 
                scale: 1, 
                x: 400, 
                rotate:8,
-               y: -220,
-               transition: { delay: 1.3, type: "spring" } 
+               y: -210,
+               transition: { delay: 1.8, type: "spring" } 
             }}
            className="absolute z-20 flex flex-col items-center"
         >
